@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./notepad.png">
+    <title>NoteBook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header>
+    <div class="container">
+        <p>NoteBook</p>
+        <p>Taking notes made fun</p>
+    </div>
+</header>
+
+<div class="action">
+    <div class="action-container">
+        <input type="text" placeholder="Filter todos" id="filter-input" onkeyup="filterList()">
+        <select name="" id="action-select" onchange="sortListBy()">
+            <option value="sort-le" id="action-le">sort by last edited</option>
+            <option value="sort-rc" id="action-rc">sort by recently created</option>
+            <option value="sort-al" id="action-al">sort alphabetically</option>
+        </select>
+        <button id="create-note" onclick="createNoteFunction('-1')">Create note &#10010;</button>
+    </div>
+</div>
+
+<div class="notes">
+    <div class="notes-container">
+        <div class="temp-notes">
+            No notes to show
+        </div>
+        <ul id="note-list"></ul>
+    </div>
+</div>
+
+<div class="create">
+    <div class="create-container">
+        <div class="top">
+            <button id="back-home" onclick="goHomeFunction()"><span>&#10094;</span>&nbsp; Home</button>
+        </div>
+        <input type="text" placeholder="title" id="note-title-input" autocomplete="off">
+        <p id="title-error-message"></p>
+        <textarea placeholder="body" cols="30" rows="10" id="note-body-input"></textarea>
+        <input type="hidden" id="editOrCreate">
+        <p id="body-error-message"></p>
+        <button id="submit-note">Submit</button>
+    </div>
+</div>
+    
+<script src="./index.js"></script>
+</body>
+</html>

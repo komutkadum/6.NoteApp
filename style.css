@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* header */
+header {
+    padding: 10px;
+    background-color: #b33939;
+    font-weight: bold;
+    font-size: xx-large;
+    color: white;
+    position: sticky;
+    top: 0;
+    letter-spacing: 2px;
+}
+header p:last-child {
+    font-size: medium;
+}
+
+.container {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding-inline: 10px;
+}
+/* header end */
+
+/* action */
+
+.action {
+    background-color: #d1d8e0;
+    padding-inline: 10px;
+    position: sticky;
+    top:74px;
+}
+
+.action-container {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.action input,select {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline-color: #227093;
+}
+
+.action button {
+    padding: 5px 10px;
+    background-color: #1c9e58;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.action button:hover {
+    background-color: #147140;
+}
+.action button:active {
+    background-color: #1c9e58;
+}
+
+
+/* action end */
+
+/* notes */
+
+.notes {
+    padding-inline: 10px;
+}
+
+.notes-container {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.notes .notes-container .temp-notes {
+    padding: 30px;
+    text-align: center;
+}
+
+.notes .notes-container #note-list {
+    list-style-type: none;
+}
+.notes .notes-container #note-list li {
+    text-decoration: none;
+    color: #333333;
+    background: #f5f6fa;
+    border: 1px solid #dedfe0;
+    margin: 1rem 0;
+    padding: 1rem;
+    display: block; 
+}
+
+.notes .notes-container #note-list li p:first-child {
+    font-size: 1.4rem;
+    margin-bottom: .4rem;
+    text-transform: capitalize;
+}
+.notes .notes-container #note-list li p:nth-child(2) {
+    display: inline-block;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.notes .notes-container #note-list li p:nth-child(3) {
+    color: #666;
+    font-size: small;
+    margin-top: 5px;
+    font-style: italic;
+}
+.notes .notes-container #note-list li button {
+    margin-right: 10px;
+    background-color: #718093;
+    padding: 7px 10px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.notes .notes-container #note-list li .edit {
+    background-color: #1c9e58;
+}
+.notes .notes-container #note-list li .edit:hover{
+    background-color: #147140;
+}
+.notes .notes-container #note-list li .edit:active{
+    background-color: #1c9e58;
+}
+.notes .notes-container #note-list li .delete {
+    background-color:#b33939;
+}
+.notes .notes-container #note-list li .delete:hover{
+    background-color:#993333;
+}
+.notes .notes-container #note-list li .delete:active{
+    background-color:#b33939;
+}
+
+/* notes end */
+
+/* create */
+
+.create {
+    padding-inline: 10px;
+    display: none;
+}
+.create .create-container {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 15px;
+}
+.create .top button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px;
+    font-weight: bold;
+    border: 0;
+    background-color:#b33939 ;
+}
+.create .top button:hover {
+    background-color:#993333 ;
+}
+.create .top button:active {
+    background-color:#b33939 ;
+}
+.create .top span {
+    font-size: x-large;
+    font-weight: bolder;
+}
+.create #title-error-message,#body-error-message {
+    background-color: #e84118;
+    padding: 7px;
+    color: white;
+    display: none;
+    font-size: medium;
+}
+
+.create input,textarea {
+    padding: 8px 15px;
+    font-size: 1rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline-color: #227093;
+}
+
+.create button {
+    padding: 12px 17px;
+    background-color: #1c9e58;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    font-weight: bold;
+}
+.create button:hover {
+    background-color: #147140;
+}
+
+.create button:active {
+    background-color: #1c9e58;
+}
+
+/* create end */
